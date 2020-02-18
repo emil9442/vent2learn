@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Vent2Learn</title>
+</head>
+<body>
+
+<div class="wrapper">
+
+    
+        
+    <h1 class="top-logo">Vent2Learn</h1>   
+    
+
+<!--TILFØJ CUSTOM KNAPPER SÅ MAN KAN VÆLGE PRESET TEMPERATUR, (SOMMER, VINTER, ARBEJDE, MOTION.) !-->
+
+
+            <input class="input-grader" type="number" name="grader" min="18" max="23">
+    
+
+            <img class="img-grader" src="/img/grader.png" alt="">
+            
+            <p class="text-grader">Temperatur</p>
+
+
+
+    
+
+    
+            <input class="input-fugt" type="number" name="fugt" min="25" max="65">
+
+    
+            <img class="img-fugt" src="/img/fugt.png" alt="">
+
+            <p class="text-fugt">Fugtighed</p>
+        
+
+    
+
+
+
+    
+
+            <img onclick="On()" class="img-lys-on" src="/img/on.png" alt="">
+            <img class="img-lys-off" src="/img/off.png" alt="">
+
+            <a onclick="Start()" class="button-start">Start</a>
+
+            <h3 class="Anbefalet">Anbefalet indeklima</h3>
+      
+            <a onclick="sommer()" class="sommer">Sommer</a>
+            <a onclick="vinter()" class="vinter">Vinter</a>
+            <a onclick="motion()" class="motion">Motion</a>
+            <a onclick="afslapning()" class="afslapning">Afslapning</a>
+
+
+                    
+          
+
+</div>
+
+<script src="java.js"></script>
+
+</body>
+</html>

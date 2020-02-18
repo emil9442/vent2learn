@@ -1,0 +1,193 @@
+/*
+html {
+    font-size: 90%; }
+    @media (max-width: 75em) {
+      html {
+        font-size: 90%; } }
+    @media (max-width: 56.25em) {
+      html {
+        font-size: 88%; } }
+
+
+        
+        */
+
+.top-logo
+{
+    grid-area: logo;
+    font-family: 'Raleway', sans-serif;
+}
+.top-logo::first-letter{
+    color:#6ea81a;
+}
+.input-grader
+{
+    font-size: 3em;
+    font-family: 'Noto Sans', sans-serif;
+    grid-area: grader;
+}
+.input-fugt
+{
+    font-size: 3em;
+    font-family: 'Noto Sans', sans-serif;
+    grid-area: fugt;
+}
+
+
+.img-grader
+{
+    
+    grid-area: img-grader;
+}
+.text-grader
+{
+    grid-area: text-grader;
+    font-family: "Lato", sans-serif;
+}
+.img-fugt
+{
+    
+    grid-area: img-fugt;
+}
+.text-fugt
+{
+    grid-area: text-fugt;
+    font-family: "Lato", sans-serif;
+}
+
+.img-lys-on
+{
+    grid-area: on;
+}
+.img-lys-off
+{
+    grid-area: off;
+}
+
+
+.Anbefalet 
+{
+    grid-area: anbefalet;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sommer
+{
+grid-area: sommer;
+}
+.vinter{
+
+    grid-area: vinter;
+
+}
+.motion{
+    grid-area: motion;
+
+}
+.afslapning
+{
+    grid-area: afslapning
+}
+.button-start{
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color:#ffffff;
+    border-radius:42px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family: "Lato", sans-serif;s
+    font-size:22px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    text-align: center;
+    text-shadow:0px 1px 0px #ffffff;
+    grid-area: button-start;
+}
+.button-start:hover {
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color:#f6f6f6;
+}
+.button-start:active {
+    position:relative;
+    top:1px;
+}
+
+
+.sommer, .vinter, .motion, .afslapning{
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color:#ffffff;
+    border-radius:42px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family: "Lato", sans-serif;s
+    font-size:22px;
+    font-weight:bold;
+    padding:12px 24px;
+    text-decoration:none;
+    text-align: center;
+    text-shadow:0px 1px 0px #ffffff;
+}
+
+
+.wrapper {
+    max-width: 1024px;
+    margin: 30px auto;
+    font-size: 1.2em;
+
+    
+}
+.wrapper > * {
+    border-radius: 5px;
+
+}
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "logo logo logo logo"
+  ". grader img-grader ."
+  ". . text-grader ."
+  ". fugt img-fugt ."
+  ". . text-fugt ."
+  ". on off ."
+
+}
+
+
+/*Desktop wrapper*/
+@media(min-width: 800px) {
+    .wrapper {
+        max-width: 1980px;
+        margin: 30px auto;
+        font-size: 1.2em;
+        background: white;
+        
+    }
+    .wrapper > * {
+        border-radius: 5px;
+    
+    }
+    
+    .wrapper {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+            ". logo logo . . . . . . . . ."
+            ". . grader img-grader . fugt img-fugt . on off . ."
+            ". . . text-grader . . text-fugt . . . . ."
+            ". . . . . button-start button-start . . . . ."
+            ". anbefalet . . . . . . . . . ."
+            ". sommer vinter motion afslapning . . . . . . ."
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+        }
+    
+}
